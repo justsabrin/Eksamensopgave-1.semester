@@ -9,14 +9,14 @@
 </head>
 <body>
     <div id="desktop-nav-container">
-        <div class="logo">Sabrin Elmi</div>
+        <div class="logo">logo</div>
         <nav id="desktop-nav">
             <ul class="nav-links">
                 <li><a href="#about">About</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
-        </nav> <!-- Move this closing tag inside the desktop-nav container -->
+        </nav> 
     </div>
     <nav id="hamburger-nav">
         <div class="logo">Sabrin Elmi</div>
@@ -27,13 +27,34 @@
                 <span></span>
             </div>
             <div class="menu-links">
-                <li><a href="#about"onclick="toggleMenu()">About</a></li>
-                <li><a href="#projects"onclick="toggleMenu()">Projects</a></li>
-                <li><a href="#contact"onclick="toggleMenu()">Contact</a></li>
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
             </div>
         </div>
     </nav>
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./assets/leaf.png" alt="Front picture">
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello! I'm</p>
+            <h1 class="title">Sabrin Elmi</h1>
+            <p class="section__text__p2">frontend developer</p>
+        </div>
+    </section>
+    <section id="about">
+        <p class="section__text__p1">Get to know more</p>
+        <h1 class="title">About me</h1>
+        <div class="section container">
+            <div class="section__pic-container"></div>
+            <img scr="./assets/about-pic.png" alt= "profile picture"
+            class="about-pic"
+/>
+<div class="about-details-container"></div>
+        </div>
+        <div></div>
+    </section>
     <script src="script.js"></script>
 </body>
-
 </html>
