@@ -16,7 +16,7 @@ html {
 }
 
 p {
-    color: rgb(85, 85, 85);
+    color: rgb(28, 26, 26);
 }
 
 /* TRANSITION */
@@ -167,9 +167,8 @@ section {
 
 .details-container {
     flex: 1;
-    border: 1px solid #000;
     padding: 10px;
-    margin: 0 5px;
+    margin: 5px;
 }
 
 
@@ -198,11 +197,62 @@ section {
     margin-bottom: 5rem; /* Adjust as needed */
 }
 
-#experience,
-#education {
+#experience{
     margin-top: 2rem; /* Adjust as needed */
 }
 
+    
+#about {
+    text-align: center; /* Center-aligns the content inside the section */
+    margin: 0 auto; /* Centers the section container */
+    padding: 20px; /* Adds padding around the section */
+    
+  }
+  
+  .title {
+    text-align: center; /* Center-aligns the title */
+    margin-bottom: 20px; /* Adds some space below the title */
+  }
+  
+  .section-container {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center-aligns the container */
+  }
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px; /* Adds space between the box container and the text container */
+  }
+  
+  .center {
+    background-color: transparent;
+    width: 350px; /* Adjust the width as needed */
+    height: 250px; /* Adjust the height as needed */
+    perspective: 1000px;
+    font-family: sans-serif;
+    margin-right: 20px; /* Space between cards */
+    box-shadow: 0 8px 14px 0 rgba(0,0,0,0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    backface-visibility: hidden;
+    border: 1px solid coral;
+    border-radius: 1rem;
+    background: linear-gradient(120deg, #ffe4c4 100%, rgb(255, 231, 222) 88%, rgb(255, 211, 195) 40%, rgba(255, 127, 80, 0.603) 48%);
+    color: #ff7f50;
+    padding: 20px; /* Adjust padding as needed */
+}
+
+
+  .text-container {
+    max-width: 800px; /* Sets a max-width for better readability */
+    text-align: left; /* Left-aligns the text */
+    margin: 0 20px; /* Adds horizontal margin for spacing */
+    font-size: 20px;
+  }
+ 
 /*FLIPCARD SECTION */
 
 .container {
@@ -254,12 +304,12 @@ section {
 }
 
 .flip-card-front {
-    background: linear-gradient(120deg, #ffe4c4 60%, rgb(255, 231, 222) 88%, rgb(255, 211, 195) 40%, rgba(255, 127, 80, 0.603) 48%);
+    background: linear-gradient(120deg, #ffe4c4 100%, rgb(255, 231, 222) 88%, rgb(255, 211, 195) 40%, rgba(255, 127, 80, 0.603) 48%);
     color: #ff7f50;
 }
 
 .flip-card-back {
-    background: linear-gradient(120deg, rgb(255, 174, 145) 30%, coral 88%, bisque 40%, rgb(255, 185, 160) 78%);
+    background: linear-gradient(120deg, rgb(255, 174, 145) 100%, coral 88%, bisque 40%, rgb(255, 185, 160) 78%);
     color: white;
     transform: rotateY(180deg);
 }
