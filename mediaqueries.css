@@ -1,8 +1,29 @@
-@media screen and (max-width: 1200px) {
-    #desktop-nav{ 
-        display: none;
+/* MEDIA QUERIES FOR RESPONSIVENESS */
+
+/* Mobile devices */
+@media only screen and (max-width: 768px) {
+    body {
+        margin: 0;
     }
-    #hamburger-nav{ 
-        display: flex;
+    
+    nav {
+        display: none; /* Hide desktop navigation */
     }
+
+    #hamburger-nav {
+        display: flex; /* Show hamburger menu */
+    }
+
+    .menu-links {
+        position: absolute;
+        top: 100%;
+        right: 0;
+        background-color: white;
+        width: 100%; /* Adjust as needed */
+        max-height: 0;
+        overflow: hidden;
+        transition: all 0.3s ease-in-out;
+    }
+
+    
 }
