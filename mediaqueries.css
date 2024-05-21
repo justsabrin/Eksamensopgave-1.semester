@@ -24,6 +24,23 @@
         overflow: hidden;
         transition: all 0.3s ease-in-out;
     }
-
-    
+   
 }
+
+ /* Background image for typical phone screens (1080x1920) */
+ .background {
+    background-image: url('1080.PNG');
+}
+
+/* Background image for medium screens larger than 768px (1200x1600) */
+@media (min-width: 768px) and (max-width: 1199px) {
+.background {
+    background-image: url('1200.PNG');
+}
+}
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+    #about .container {
+      flex-direction: column; /* Stack items vertically */
+    }
+  }
