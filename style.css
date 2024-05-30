@@ -15,6 +15,97 @@
     --dark-color: #3B4F3E;
     --text-color: #697477;
 }
+/*==== Logo ====*/
+.nav__logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.nav__mini-logo {
+    width: 30px; 
+    margin-right: 10px; 
+}
+
+.nav__logo {
+    text-decoration: none;
+    color: #000; 
+}
+
+/*====== Navigation =====*/
+.nav__toggle {
+    display: none; 
+    color: var(--white-color);
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/*===== Hamburger Menu Icon Styling =====*/
+.nav__toggle-icon {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav__toggle.active {
+    color: var(--text-color);
+ 
+}
+/*===== Front Text =====*/ 
+
+
+.home {
+    position: relative;
+    background-image: url('circle-scatter-4.svg'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    overflow: hidden;
+    height: calc(100vh - var(--header-height)); 
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+}
+
+.home__container {
+    height: 100%;
+    width: 100%; 
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    text-align: center; 
+    position: relative; 
+    z-index: 10; 
+}
+
+.home__title {
+    font-size: 2rem;
+    color: var(--white-color);
+    line-height: .8;
+    position: relative;
+    z-index: 10;
+   
+}
+
+.home__title-large {
+    font-size: 4rem;
+}
+
+.home__title-small {
+    font-size: 3rem;
+    color: #FDE2AB
+}
+
+.home__img {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
 
 /*===== Font and Typography =====*/
 :root{
@@ -191,37 +282,44 @@ img{
     width: 295px;
 }
 
-/* ===== ABOUT =====*/
-.about__container{
+/* ===== ABOUT ===== */
+.about__container {
     justify-items: center;
     row-gap: 2rem;
     text-align: center;
 }
-.about__img{
+
+.about__img {
     display: flex;
     justify-content: center;
     padding-top: 1rem;
     width: 120px;
     height: 120px;
-    background-color: var(--first-color);
-    border-radius: 50%;
+   
     overflow: hidden;
 }
-.about__img img{
-    width: 100px;
+
+.about__img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
 }
-.about__subtitle{
+
+.about__subtitle {
     font-size: var(--h2-font-size);
     color: var(--first-color);
     margin-bottom: var(--mb-1);
 }
-.about__text{
+
+.about__text {
     margin-bottom: var(--mb-4);
 }
-.about__profession{
+
+.about__profession {
     display: block;
     margin-bottom: var(--mb-4);
 }
+
 
 /* ===== SKILLS =====*/
 .skills__container{
@@ -323,7 +421,7 @@ img{
     cursor: pointer;
 }
 
-/* ===== FOOTER=====*/
+/* ===== FOOTER =====*/
 .footer{
     background-color: var(--dark-color);
 }
